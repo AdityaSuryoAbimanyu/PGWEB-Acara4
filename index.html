@@ -150,7 +150,9 @@
             "Polygon": polygon,
         };
 
-        var controllayer = L.control.layers(baseMaps, overlayMaps);
+        var controllayer = L.control.layers(baseMaps, overlayMaps, {
+            collapsed: false,
+        });
         controllayer.addTo(map);
 
         // Scale
